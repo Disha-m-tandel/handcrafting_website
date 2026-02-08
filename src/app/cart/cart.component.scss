@@ -4,7 +4,6 @@
      flex-wrap: wrap;
     margin: 0;
     display: flex;
- 
     padding-top: 7rem;
   padding-bottom: 3rem;
   padding-left: 2rem;
@@ -20,14 +19,14 @@
   overflow: hidden;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: 10rem;
+  width: 12rem;
   height: auto;
   }
 
 
 .top-card {
-  width: 10rem;
-  height: 10rem;
+  width: 12rem;
+  height: 12rem;
   object-fit: cover;
   display: block;
 }
@@ -62,6 +61,22 @@ button:hover{
 }
 
 
+
+.collection-card p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #5a3e2b;
+  font-family: 'Poppins', sans-serif;
+  filter: brightness(0) saturate(100%)
+          invert(27%) sepia(38%)
+          saturate(480%) hue-rotate(357deg)
+          brightness(92%) contrast(95%);
+  margin: 0;
+  padding: 0.4rem;
+  cursor: pointer;
+}
+
 @media(max-width: 768px){
   .empty-cart p{
     font-size: 1.5rem;
@@ -72,17 +87,17 @@ button:hover{
   }
 
   .top-card{
-    width: 5rem;
-    height: 5rem;
+    width: 11rem;
+    height: 11rem;
   }
 
   .collection-card{
-    width: 5rem;
+    width: 11rem;
     border-radius: 0.5rem;
   }
 
   .collection-card p{
-      font-size: 0.5rem;
+      font-size: 0.9rem;
   }
 
   .collection-grid{

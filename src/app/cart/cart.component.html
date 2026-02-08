@@ -2,7 +2,7 @@
     <div class="collection-grid">
         <div *ngFor="let item of cartItems" class="collection-card">
             <img [src]="item.image" class="top-card" />
-            <p class="card-details" (click)="removeItem(item)">Remove from the cart</p>
+            <p class="card-details" (click)="removeItem(item)">Remove from the cart<img src="/assets/images/cancel.svg" alt="Remove Icon"></p>
         </div>
     </div>
 <button class="cta-btn" (click)="sendAllToWhatsApp()" *ngIf="cartItems.length > 0; else emptyCart">
