@@ -1,0 +1,145 @@
+.navbar-container{
+    width: 100%;
+    height: auto;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin:0;
+    padding: 0;
+    position: fixed;   /* ✅ */
+    top: 0;             /* ✅ */
+    z-index: 1000;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    box-sizing: border-box;
+}
+
+.logo{
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+    line-height: 2rem;
+     color: #5A3E2B;
+}
+
+a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: poppins, sans-serif;
+    letter-spacing: 0.015rem;
+    color: #5A3E2B; /* deep plum */
+    padding-bottom: 3px;
+}
+
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+   color: #5A3E2B;
+   line-height: 1.2rem;
+   
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    margin-top: 0;
+    margin-bottom:0;
+}
+
+
+
+ul li{
+    list-style: none;
+
+}
+a.active {
+  font-weight: 600;
+  border-bottom: 2.5px solid #C08A3E;
+  transition: border-bottom 0.2s ease;
+}
+
+
+.cart-icon{
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  filter: brightness(0) saturate(100%)
+          invert(27%) sepia(38%)
+          saturate(480%) hue-rotate(357deg)
+          brightness(92%) contrast(95%);
+}
+
+
+
+/* Hamburger icon */
+
+@media (max-width: 768px) {
+
+.navbar-container{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.navbar{
+    height: 100%;
+}
+
+  /* ✅ hide menu by default on mobile */
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 3rem;
+    width: 100%;
+    flex-direction: column;
+    right: 0;
+    margin: 0;
+    // box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    justify-content: flex-end;
+    // background: rgba(185, 174, 174, 0.7);
+    // backdrop-filter: blur(10px);
+    // border-radius: 0.88rem;
+    padding: 1rem 0;
+    gap: 1rem;
+    transition: all 0.3s ease-in-out;
+    border-bottom: none;
+    background-color: #EFE8E2;
+    color: #5B3A29;
+  }
+
+  /* show only when menuOpen is true */
+  .nav-links.active {
+    display: flex;
+  }
+
+  /* show hamburger icon only on mobile */
+  .menu-icon {
+    display: block;
+  }
+
+  .cart-icon{
+    filter: brightness(0) saturate(100%)
+          invert(27%) sepia(38%)
+          saturate(480%) hue-rotate(357deg)
+          brightness(92%) contrast(95%);
+  }
+
+  .logo{
+    margin-left: 0.5rem;
+    font-weight: 700;
+    font-size: 1.1rem;
+    background: rgb(119, 96, 96);
+    background-clip: text;
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
+}

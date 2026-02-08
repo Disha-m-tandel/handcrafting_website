@@ -1,0 +1,23 @@
+<section style="text-align: center; padding-bottom: 1rem"><div *ngIf="cartItems.length > 0; else emptyCart">
+    <div class="collection-grid">
+        <div *ngFor="let item of cartItems" class="collection-card">
+            <img [src]="item.image" class="top-card" />
+            <p class="card-details" (click)="removeItem(item)">Remove from the cart</p>
+        </div>
+    </div>
+<button class="cta-btn" (click)="sendAllToWhatsApp()" *ngIf="cartItems.length > 0; else emptyCart">
+        Send All via WhatsApp
+    </button>
+
+</div>
+</section>
+ 
+
+<!-- EMPTY CART MESSAGE -->
+<ng-template #emptyCart>
+    <div class="empty-cart">
+        <p>Your cart is empty.</p>
+        <p>Add designs from collections to send them via WhatsApp 💬</p>
+        <a href="/collection"><button class="cta-btn">View Collection</button></a>
+    </div>
+</ng-template>

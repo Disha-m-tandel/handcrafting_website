@@ -1,0 +1,46 @@
+<div class="navbar-container">
+
+    <nav class="navbar">
+        <div class="logo">
+            HandCrafting Design
+        </div>
+        <div class="menu-icon" *ngIf="isMobile" (click)="toggleMenu()">
+            <i class="fa-solid fa-bars" *ngIf="!menuOpen"></i>
+            <i class="fa-solid fa-xmark" *ngIf="menuOpen"></i>
+        </div>
+        <ul class="nav-links" [class.active]="menuOpen">
+            <li>
+                <a routerLink="/home" (click)="goHome()" [class.active]="activeMenu === 'home'">Home
+                </a>
+            </li>
+
+            <li>
+                <a routerLink="/collection" (click)="setActive('collection')"
+                    [class.active]="activeMenu === 'collection'">
+                    Collection
+                </a>
+            </li>
+            <li>
+                <a routerLink="/about-us" (click)="setActive('about-us')" 
+                [class.active]="activeMenu === 'about-us'">
+                    About Us
+                </a>
+            </li>
+
+            <li>
+                <a (click)="scrollToContact(); setActive('contact')" [class.active]="activeMenu === 'contact'">
+                    Contact
+                </a>
+            </li>
+
+            <li>
+                <a routerLink="/cart" (click)="setActive('cart')" [class.active]="activeMenu === 'cart'">
+                    <img src="assets/images/cart.svg" class="cart-icon"/>
+                </a>
+            </li>
+            
+        </ul>
+
+    </nav>
+
+</div>

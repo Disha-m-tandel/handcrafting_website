@@ -1,0 +1,214 @@
+.collection-section {
+  background-color: #FFF7F2; /* warm cream */
+  // padding: 3rem 2rem;
+  padding-top: 7rem;
+  padding-bottom: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  text-align: center;
+}
+
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  color: #5A3E2B; /* chocolate brown */
+  margin-bottom: 1rem;
+  margin-top:0;
+}
+
+.section-subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  color: #6B4F3F;
+  margin-bottom: 2.5rem;
+}
+
+/* GRID */
+.collection-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  max-width: 72rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* CARD */
+.collection-card {
+  background: #FFFFFF;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 13rem;
+  height: auto;
+}
+
+// .collection-card .top-card {
+//   width: 100%;
+//   height: 100%;
+//   object-fit: cover;
+// }
+
+.collection-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* IMAGE */
+.collection-card .top-card {
+  width: 13rem;
+  height: 13rem;
+  object-fit: cover;
+  display: block;
+}
+
+/* TITLE */
+.collection-card p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #5A3E2B;
+  padding: 16px;
+  margin: 0;
+}
+
+.card-details{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  margin-left: 0.7rem;
+}
+
+.cart-icon{
+  width: 3.1rem;
+  height: 2.7rem;
+  cursor: pointer;
+}
+
+.cart-button{
+  background-color: #dcb053;   /* deep charcoal brown */
+  color: white;
+  border: none;
+  border-radius: 1rem;
+  padding: 0.3rem 0.9rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cart-button:hover {
+  background-color: #5a3e2b; /* darker shade on hover */
+}
+
+
+.cart-button-1{
+  background-color: #5a3e2b;   /* deep charcoal brown */
+  color: white;
+  border: none;
+  border-radius: 1rem;
+  padding: 0.3rem 0.9rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  opacity: 0.9;
+}
+
+.cart-button-1:hover {
+  background-color: #dcb053; /* darker shade on hover */
+}
+
+.qty-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.qty-controls button {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: none;
+  background: #5b3a29;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .collection-section{
+    padding: 1.65rem 1rem;
+  }
+
+  .section-title{
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .section-subtitle{
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+    padding-top: 1rem;
+  }
+
+  .collection-card{
+    width: 5rem;
+    border-radius: 0.5rem;
+  }
+
+  .collection-card .top-card{
+    width: 5rem;
+    height: 5rem;
+
+  }
+
+  .collection-card img {
+  width: 1.5rem;
+  height: 1.5rem;
+  object-fit: cover;
+}
+  .collection-grid {
+  display: grid;
+  gap: 1rem;
+  max-width: 36rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+.cart-icon{
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+}
+
+.card-details{
+  padding: 0;
+}
+
+.cart-button{
+  padding: 0.2rem 0.3rem;
+  font-size: 0.3rem;
+}
+
+.cart-button-1{
+  padding: 0.2rem 0.3rem;
+  font-size: 0.3rem;
+}
+
+.collection-card:hover {
+  transform: none;
+  box-shadow: none;
+}
+}

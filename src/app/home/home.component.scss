@@ -1,0 +1,88 @@
+.hero {
+  position: relative;   /* keeps overlay inside */
+  height: 91.5vh;         /* occupies space */
+  width: 100%;
+  padding-top: 4rem;
+}
+
+.banner-image {
+  background-image: url("/assets/images/image.webp");
+  background-size: cover;
+  background-position: center;
+  height: 91.5vh;
+  width: 100%;
+
+}
+
+.overlay-text {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  color: white;
+  font-display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.content {
+  color: white;
+}
+
+.title {
+  font-size: 3.75rem;
+  line-height: 3rem;
+  margin-bottom: 1.5rem;
+  font-family: playfair display, serif;
+  letter-spacing: 0;
+}
+
+.subtitle {
+  max-width: 520px;
+  margin-bottom: 2rem;
+  letter-spacing: 0.015rem;
+  font-size: 1rem;
+  line-height: 1;
+  font-family: poppins, sans-serif;
+  
+}
+
+
+
+
+.cta-btn {
+  background-color: #dcb053;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+    font-family: poppins, sans-serif;
+}
+
+.cta-btn:hover {
+  background-color: #5a3e2b; /* chocolate */
+}
+
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+@media (max-width: 768px) {
+  .banner-image {
+    height: 93.5vh;
+  }
+  .hero{
+    height: 93.5vh;
+  }
+}
+  

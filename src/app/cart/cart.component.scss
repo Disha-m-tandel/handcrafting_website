@@ -1,0 +1,93 @@
+
+.collection-grid {
+    gap: 1rem;
+     flex-wrap: wrap;
+    margin: 0;
+    display: flex;
+ 
+    padding-top: 7rem;
+  padding-bottom: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.collection-card{
+   background: #FFFFFF;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 10rem;
+  height: auto;
+  }
+
+
+.top-card {
+  width: 10rem;
+  height: 10rem;
+  object-fit: cover;
+  display: block;
+}
+
+.empty-cart {
+  text-align: center;
+  margin-top: 3rem;
+  color: #6b4f3f;
+  font-size: 3rem;
+  padding-top: 5rem;
+}
+
+.cta-btn {
+  background-color: #dcb053;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+  font-family: poppins, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+button:hover{
+    background-color: #6b4f3f;
+}
+
+
+@media(max-width: 768px){
+  .empty-cart p{
+    font-size: 1.5rem;
+  }
+
+  .cta-btn{
+    padding: 0.5rem 1rem;
+  }
+
+  .top-card{
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .collection-card{
+    width: 5rem;
+    border-radius: 0.5rem;
+  }
+
+  .collection-card p{
+      font-size: 0.5rem;
+  }
+
+  .collection-grid{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+

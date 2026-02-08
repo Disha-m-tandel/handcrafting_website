@@ -1,0 +1,25 @@
+<section class="collection-section">
+  <h2 class="section-title">Our Collections</h2>
+  <p class="section-subtitle">
+    A selection of hand-stitched embroidery hoops.
+  </p>
+
+  <div class="collection-grid">
+    <div class="collection-card" *ngFor="let product of products">
+      <img class="top-card" [src]="product.image" />
+      <div class="card-details">
+        <!-- <img class="cart-icon" src="assets/images/cart.png"> -->
+        <button class="cart-button" *ngIf="userService.getQuantity(product.id) === 0" (click)="addToCart(product)">Add
+          to Cart</button>
+        
+          <!-- class="qty-controls" -->
+          <button *ngIf="userService.getQuantity(product.id) > 0" class="cart-button-1">Added to cart</button>
+          <!-- <button (click)="removeFromCart(product)">−</button>
+          <span>{{ userService.getQuantity(product.id) }}</span>
+          <button (click)="addToCart(product)">+</button> -->
+      
+        <img src="assets/images/whatsapp.png" class="cart-icon" (click)="sendSingle(product)">
+      </div>
+    </div>
+  </div>
+</section>
