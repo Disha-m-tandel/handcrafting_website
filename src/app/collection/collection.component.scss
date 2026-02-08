@@ -161,19 +161,19 @@
   }
 
   .collection-card{
-    width: 5rem;
+    width: 11rem;
     border-radius: 0.5rem;
   }
 
   .collection-card .top-card{
-    width: 5rem;
-    height: 5rem;
+    width: 11rem;
+    height: 11rem;
 
   }
 
   .collection-card img {
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 2rem;
+  height: 2rem;
   object-fit: cover;
 }
   .collection-grid {
@@ -194,12 +194,12 @@
 }
 
 .card-details{
-  padding: 0;
+  padding: 0.4rem;
 }
 
 .cart-button{
-  padding: 0.2rem 0.3rem;
-  font-size: 0.3rem;
+  padding: 0.3rem 0.9rem;
+  font-size: 0.8rem;
 }
 
 .cart-button-1{
