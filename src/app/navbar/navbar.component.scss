@@ -98,7 +98,7 @@ a.active {
   .nav-links {
     display: none;
     position: absolute;
-    top: 3rem;
+    top: 0;
     width: 100%;
     flex-direction: column;
     right: 0;
@@ -114,6 +114,7 @@ a.active {
     border-bottom: none;
     background-color: #EFE8E2;
     color: #5B3A29;
+    margin-top: 4rem;
   }
 
   /* show only when menuOpen is true */
