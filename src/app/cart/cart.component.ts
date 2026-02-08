@@ -29,7 +29,7 @@ sendAllToWhatsApp() {
   });
 
   window.open(
-    `https://wa.me/91XXXXXXXXXX?text=${encodeURIComponent(message)}`,
+    `https://wa.me/919113872844?text=${encodeURIComponent(message)}`,
     '_blank'
   );
 }
